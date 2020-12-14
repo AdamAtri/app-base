@@ -1,7 +1,6 @@
 const { networkInterfaces } = require('os');
 const shell = require('shelljs');
 const { join } = require('path');
-const { get } = require('https');
 
 function getLocalIp() {
   const nets = networkInterfaces();
