@@ -8,6 +8,9 @@ Then follow the instructions that arise from running
 `tns doctor`
 
 ## Once {N}ativescript is setup
+To install app dependencies:
+`npm i`
+
 To start the server:
 `npm run api-server`
 
