@@ -12,3 +12,8 @@ To start the server:
 
 To start the app:
 `tns <debug|run> <android|ios>`
+
+## When you're ready to code
+Please create a branch and push all code changes to it.
+`git checkout -b <your-name>`
+`git push -u origin <your-name>`
