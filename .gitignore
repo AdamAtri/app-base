@@ -1,3 +1,4 @@
 node_modules/
 platforms/
 **/*.js
+!hooks/before-prepare/replace-local-ip.js
