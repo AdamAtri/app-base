@@ -1,8 +1,9 @@
 import * as http from "tns-core-modules/http";
+import { LOCALHOST } from "~/app-config";
 
 export type Param = [string /*key*/, any /*value*/]
 
-const host = "<localhost>:9191";
+const host = `${LOCALHOST}:9191`;
 const baseUrl = `http://${host}`;
 export async function get(url:string, params?:Array<Param>):Promise<any> {
   if (await ping() !== true) {
