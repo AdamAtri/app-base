@@ -2,6 +2,8 @@ node_modules/
 platforms/
 **/*.js
 !hooks/before-prepare/replace-local-ip.js
+!hooks/before-prepare/update-global-type.js
+!hooks/after-prepare/update-global-type.js
 
 #ignore the app-config file
 app/app-config.ts
