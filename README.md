@@ -1,10 +1,10 @@
 # app-base
 The app-base requires NativeScript cli ver. 6.7.8;
 
-(my-globals: {  
-  &nbsp;&nbsp;nativescript: 6.7.8    
-  &nbsp;&nbsp;node: v12.18.2  
-  &nbsp;&nbsp;npm: 6.14.9  
+(my-globals: {    
+  &nbsp;&nbsp;node: v12.18.2,
+  &nbsp;&nbsp;npm: 6.14.9,
+  &nbsp;&nbsp;nativescript: 6.7.8,
 });
 
 To install NativeScript:  
