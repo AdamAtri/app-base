@@ -1,0 +1,49 @@
+.button {
+  background-color: rgb(65, 108, 165);
+  border-radius: 5;
+  border-width: 0.5;
+  border-color: #0e2938;
+  font-size: 20;
+  font-weight: 600;
+  color: white;
+}
+.author{
+  font-weight: bold;
+  font-size:22;
+  margin-left:20;
+  color:gray;
+  
+}
+.avatar{
+  height:80;
+  width:80;
+}
+.image{
+  /* height:400; */
+  width:90%;
+  margin:40;
+}
+.link{
+  margin-left:10; 
+  color:cadetblue;
+}
+
+.author-box{
+  margin-bottom:40;
+  margin-left:10;
+}
+.title{
+  horizontal-align:center;
+  font-weight: bold;
+  font-size:30;
+}
+.description{
+  horizontal-align:center;
+  margin:10;
+  font-size:24;
+}
+.tags{
+  horizontal-align:left;
+  margin:10;
+  font-size:18;
+}

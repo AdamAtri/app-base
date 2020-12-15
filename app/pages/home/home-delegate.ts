@@ -22,7 +22,8 @@ export class HomeDelegate extends BaseDelegate {
     threadListView.titleLabel.text = "VoiceThreads";
     dataBind(threadListView, 'items', this, 'threads');
     getThreads().then(result => {
-      console.log('result', result);
+      // console.log('result', result);
+      console.log(result.length +" threads retrieved")
       this.threads = result;
     });
   }

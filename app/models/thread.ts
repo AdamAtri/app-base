@@ -23,6 +23,7 @@ export async function getThreads(params?:Array<Param>):Promise<Array<Thread>> {
   try {
     return await get(`${apiEndpoint}/getList`, params);
   } catch(e) {
+    console.log('GET_THREADS: '+e)
     trace.error('GET_THREADS: '+e);
     return null;
   }
