@@ -23,6 +23,8 @@ function getLocalIp() {
 module.exports = function replaceLocalIp($logger, $projectData, hookArgs) {
   shell.cd(join($projectData.projectDir, 'app'));
   const files = shell.find('app-config.ts');
-  if (files.length) return;
-  shell.exec(`echo "export const LOCALHOST:string = '${getLocalIp()}'" >> app-config.ts`);
+  const ip = getLocalIp();
+  if (!files.length) 
+    shell.exec(`echo "export const LOCALHOST:string = '${ip}'" >> app-config.ts`);
+  $logger.info(`app-config updated with server ip: ${ip}`);
 }
