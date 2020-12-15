@@ -16,6 +16,7 @@ import { HorizontalAlignment, TextAlignment, TextTransform } from "tns-core-modu
 import { getSizes } from "../utils/sizes";
 import { VTColors } from "../utils/colors";
 import { ActionHeader } from "./headers/action-header";
+import { Image } from "@nativescript/core/ui/image";
 
 let sizes = getSizes();
 
@@ -95,6 +96,11 @@ class ComponentFactory {
         return this.make(Label, args) as Label;
     }
 
+    public makeImage(args: any): Image {
+        args = Object.assign({ }, args);
+        return this.make(Image, args) as Image;
+
+    }
     public makeTextField(args: any): TextField {
         args = Object.assign({ color: VTColors.BLUE_900 }, args);
         return this.make(TextField, args) as TextField;

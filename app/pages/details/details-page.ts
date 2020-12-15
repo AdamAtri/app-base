@@ -15,6 +15,7 @@ export class DetailsPage extends HomeBase {
   constructor(inDelegate?:BaseDelegate) {
     super();
     this.delegate = inDelegate || new DetailsDelegate;
+    // this.header = 
     // this.main = this.threadListView;
     // this.onActionTap = function(){console.log("tapped back")}
   }
